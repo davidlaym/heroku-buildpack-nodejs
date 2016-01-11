@@ -1,5 +1,5 @@
 install_node_modules() {
-  local build_dir=${1:-}
+  local build_dir=${1:-}$WEB_PATH
 
   if [ -e $build_dir/package.json ]; then
     cd $build_dir
